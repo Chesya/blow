@@ -18,8 +18,8 @@
        age = prompt('Как вас любит называть один парень?');
        if (age != 'Светлячок') { 
            alert('Нет.Пробуй еще раз!')
-       }
-       else {break outer}
+       };
+       if (!age) { break outer} ;
     };
     
     if (age == 'Светлячок') {  
