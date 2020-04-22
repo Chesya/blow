@@ -5,18 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вопросик</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
 </head>
 <body>
    <a href="https://chesya.github.io/blow1/">Играть еще раз</a>
    <script>
     let age = '';
-    alert('Привет! тебе нужно ответить на один вопрос, чтобы получитить небольшое послание )))');   
+    alert( 'Привет! тебе нужно ответить на один вопрос,
+            чтобы получитить небольшое послание )))');   
     
     outer: while (age != "Светлячок") {
        age = prompt('Как вас любит называть один парень?', 'ваш ответ');
-       if (!age) { break outer} ;
-       if (age != "Светлячок") { alert ("Неверно!")};
+       
+       if (!age) {
+         break outer
+       };
+       if (age != "Светлячок") { 
+         alert ("Неверно!")
+       };
     };
     
     if (age == 'Светлячок') {  
@@ -24,7 +29,7 @@
       if (isBoss) { 
           alert('Верно! Ваша булочка скучает и целует вас!')
       } else { 
-          alert('Ну ты и мотылек!(')
+          alert('Сдаешься? Ну ты и мотылек!(')
       } 
     };    
    </script>
